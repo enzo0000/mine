@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css\web1styles.css" rel="stylesheet">
+		<script src="jquery\jquery-3.6.0.min.js"></script>
+		<script src="scripts\Web1.js"></script>
+		
+		<title>Webpage1</title>	
+	</head>
+	
+	<body background-color="maroon">
+	
+		<div class="header">
+			<header id="marq">ENZO'S FASTFOOD CORPORATION </header>
+		</div>
+		
+		<div class="menu">
+			
+			<div class="menuitems">
+				<img src="pictures\download.jfif">				
+					<div class="desc">
+						<input type="checkbox" id="item1">Margherita
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\1.jfif">
+				
+					<div class="desc">
+						<input type="checkbox" id="item2">Marinara
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\3.jpeg">
+				
+					<div class="desc">
+						<input type="checkbox" id="item3">Quattro Stagioni
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\4.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item4">Carbonara
+					</div>
+			</div>			
+			
+			<div class="menuitems">
+				<img src="pictures\5.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item5">Frutti di Mare
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\6.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item6">Quattro Formaggi
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\7.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item7">Napoletana 
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\8.jpg">
+		
+					<div class="desc">
+						<input type="checkbox" id="item8">Pugliese
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\21.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item9">Montanara
+					</div>
+			</div>			
+			
+			<div class="menuitems">
+				<img src="pictures\10.jpg">
+		
+					<div class="desc">
+						<input type="checkbox" id="item10">Emiliana
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\11.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item11">Romana
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\12.jfif">
+			
+					<div class="desc">
+						<input type="checkbox" id="item12">Fattoria
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\13.jfif">
+				
+					<div class="desc">
+						<input type="checkbox" id="item13">Schiacciata
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\14.jpg">
+				
+					<div class="desc">
+						<input type="checkbox" id="item14">Prosciutto 
+					</div>
+			</div>			
+			
+			<div class="menuitems">
+				<img src="pictures\15.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item15">Americana
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\16.jpg">
+				
+					<div class="desc">
+						<input type="checkbox" id="item16">Funghi
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\17.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item17">Braccio di Ferro
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\18.jpeg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item18">Sarda
+					</div>
+			</div>
+			
+			<div class="menuitems">
+				<img src="pictures\19.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item19">Tonno
+					</div>
+			</div>			
+			
+			<div class="menuitems">
+				<img src="pictures\20.jpg">
+			
+					<div class="desc">
+						<input type="checkbox" id="item20">Valtellina
+					</div>
+			</div>			
+			
+			
+		</div>
+		
+		<div class="btn">
+		
+			<button style="background-color:#f05518" id="bt1"><center>Calculate Bills</center></button>
+			<button style="background-color:#f05518" id="bt2"><center>Print Transaction</center></button>
+			<button style="background-color:#f05518" id="bt3"><center>Remove Order</center></button>
+			<button style="background-color:#f05518" id="bt4"><center>New</center></button>
+			<button style="background-color:#f05518" id="bt5"><center>Exit</center></button>
+			
+		</div>
+	
+		<div class="order_choice">
+		
+			<p><b>&nbsp Food Choices</b></p>
+			&nbsp &nbsp &nbsp &nbsp <input type="radio" id="bundleA" onfocus="enablecheckbox()"> Food Bundle A
+			</br>
+			</br>
+			&nbsp &nbsp &nbsp &nbsp <input type="radio" id="bundleB" onfocus="disablecheckbox()"> Food Bundle B
+			
+		</div>
+		
+		<div class="bundles">
+		
+			<p><b>&nbsp &nbsp Food Bundle A:</b></p>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check1">10 pcs. Delicious Fried Chicken
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check2">2 Large Fries
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check3">1.5 Coke
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check4">4 Side Dishes
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check5">
+			Special Pizza Delights
+			
+			<p><b>&nbsp &nbsp Food Bundle B:</b></p>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check6">4 Cups Special halo Halo Regular
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check7">6 pcs. Delicious Fried Chicken
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check8">1 Family Pack Carbonara
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check9">1 Family Pack Fries
+			<span class="break"></span>
+			&nbsp &nbsp &nbsp <input type="checkbox" id="check10">1 Medium Hawaiian Pizza
+		
+		</div>
+		
+		<div class="ordetails">
+		
+			<span class="break"></span>
+			&nbsp &nbsp Price: &nbsp <input type="textview" id="textview1" readonly>
+			<span class="break"></span>
+			&nbsp &nbsp Quantity: &nbsp <input type="textview" id="textview2" placeholder="INPUT ITEM QUANTITY">
+			<span class="break"></span>
+			&nbsp &nbsp Discount Given: &nbsp <input type="textview" id="textview3" value="0.">
+			<span class="break"></span>
+			&nbsp &nbsp Discounted Amount: &nbsp <input type="textview" id="textview4" readonly>
+			<span class="break"></span>
+			&nbsp &nbsp Total Bills: &nbsp <input type="textview" id="textview5" readonly>
+			<span class="break"></span>
+			&nbsp &nbsp Total Quantity: &nbsp <input type="textview" id="textview6" readonly>
+			<span class="break"></span>
+			&nbsp &nbsp Cash Recieved: &nbsp <input type="textview" id="textview7" placeholder="INPUT CASH RECIEVED">
+			<span class="break"></span>
+			<br/>
+			&nbsp &nbsp Change: &nbsp <input type="textview" id="textview8" readonly>
+		
+		</div>
+		
+		<div class="panel">
+		
+			<textarea id="show_order" readonly></textarea>
+			
+			<iframe src="pictures\simple-receipt-template.png" id="img_frame" frameborder="0"></iframe>
+		
+		</div>
+	
+	</body>
+	
+
+</html>
